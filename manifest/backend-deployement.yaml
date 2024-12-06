@@ -1,0 +1,29 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: express-backend
+  labels:
+    app: express-backend
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: express-backend
+  template:
+    metadata:
+      labels:
+        app: express-backend
+    spec:
+      containers:
+        - name: express-backend
+          image: node:16-alpine # Temporary image, update later with your built backend image
+          ports:
+            - containerPort: 5000
+          volumeMounts:
+            - mountPath: /app
+              name: backend-code
+          command: ['node', '/app/server.js']
+      # volumes:
+      #   - name: backend-code
+      #     hostPath:
+      #       path: /path/to/backend/code # Change to your Express server path
