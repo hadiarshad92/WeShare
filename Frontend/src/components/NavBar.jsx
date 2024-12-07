@@ -31,11 +31,7 @@ const NavBar = (props) => {
       link: `/profile/${userCtx.userInfo._id}`,
       icon: <PersonOutlineOutlinedIcon fontSize="large" />,
     },
-    {
-      item: "Transactions",
-      link: "/transactions",
-      icon: <SwapHorizOutlinedIcon fontSize="large" />,
-    },
+  
   ];
 
   const navBar2 = [

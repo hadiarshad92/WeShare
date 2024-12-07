@@ -52,7 +52,6 @@ const TopBar = (props) => {
               component={NavLink}
               to="/"
             >
-              <GiteIcon />
             </IconButton>
             <Typography
               variant="h6"
@@ -60,7 +59,7 @@ const TopBar = (props) => {
               sx={{ flexGrow: 1 }}
               className="burgundy-text"
             >
-              neighbourly
+              We<span>Share</span>
             </Typography>
 
             {/* conditional rendering of avatar & burger menu */}
