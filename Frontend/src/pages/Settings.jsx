@@ -2,7 +2,7 @@ import React, { useContext, useState, useRef } from "react";
 import { useNavigate } from "react-router-dom";
 import TopBar from "../components/TopBar";
 import Grid from "@mui/material/Unstable_Grid2";
-import DistrictEnums from "../enums/districtEnums";
+import DistrictEnums from "../enums/DistrictEnums";
 import {
   Autocomplete,
   Container,
@@ -291,7 +291,7 @@ const Settings = (props) => {
             onInputChange={(event, newInputValue) => {
               setDistrict1(newInputValue);
             }}
-            renderInput={(params) => <TextField {...params} label="District" />}
+            renderInput={(params) => <TextField {...params} label="Area" />}
           />
           <TextField
             type="text"

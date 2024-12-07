@@ -109,7 +109,7 @@ const Profile = (props) => {
                   sx={{ ml: "3rem" }}
                 >
                   {/* optional chaining for object and array to prevent page load fail */}
-                  {`Neighbourhood: ${currProfile.location?.[0].district}`}
+                  {`Area: ${currProfile.location?.[0].district}`}
                 </Typography>
                 <Typography sx={{ ml: "3rem" }}>
                   {currProfile.biography}

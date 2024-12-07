@@ -3,7 +3,7 @@
 :root {
   --lightpink: rgba(255, 248, 247, 1);
   --dustypink: rgba(242, 229, 230, 1);
-  --burgundy: rgba(187, 0, 84, 1);
+  --burgundy: rgb(0, 69, 187);
   --brown: rgba(143, 110, 117, 1);
   --bgm: rgba(255, 255, 255, 1);
   /* --font: "Josefin Sans", sans-serif; */
